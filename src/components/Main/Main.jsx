@@ -45,9 +45,9 @@ const Main = () => {
         </ul>
         
       </nav>
-      <div class="Multi-Lang-Bot">
-      <h1>Text-Summerize Bot</h1>
-      </div>
+      {/*<div class="Multi-Lang-Bot">
+      <h1>Multi-Language Bot</h1>
+      </div>*/}
 
       <div className="main-container">
         {showResult ? (
@@ -71,12 +71,12 @@ const Main = () => {
           </div>
         ) : (
           <>
-            <div className="greet">
+            {/*<div className="greet">
               <p>
                 <span>Whats Up!.</span>
               </p>
               <p>How can I help you today?</p>
-            </div>
+            </div>*/}
             <div className="cards"></div>
           </>
         )}
@@ -88,17 +88,18 @@ const Main = () => {
               value={input}
               type="text"
               placeholder="Enter a prompt here"
+              aria-label='Enter a promt here'
             />
             <div>
-              <img src={assets.gallery_icon} width={30} alt="" />
-              <img src={assets.mic_icon} width={30} alt="" />
+              {/*<img src={assets.gallery_icon} width={30} alt="" />
+              <img src={assets.mic_icon} width={30} alt="" />*/}
               {input ? (
                 <img onClick={() => onSent()} src={assets.send_icon} width={30} alt="" />
               ) : null}
             </div>
           </div>
           <p className="bottom-info">
-            Accessibility bot may display inaccurate info, including about people, so double-check its responses. Your privacy and Gemini Apps
+            Accessibility bot may display inaccurate info, including about people, so double-check its responses.
           </p>
         </div>
       </div>
